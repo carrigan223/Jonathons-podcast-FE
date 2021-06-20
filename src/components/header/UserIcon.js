@@ -1,9 +1,8 @@
-import React from "react"
+import React from "react";
 import AuthService from "./../../services/auth.service";
 import UserService from "./../../services/user.service";
-import { Link } from "react-router-dom";
+import { AuthLinksContainer, AuthLink } from "./UserIconStyles";
 class UserIcon extends React.Component {
-
   render() {
     const logout = () => {
       AuthService.logout();
@@ -14,20 +13,17 @@ class UserIcon extends React.Component {
         return (
           <>
             <i className="fas fa-podcast fa-5x"></i>
-                  <Link
-                    href="/signout"
-                    onClick={logout}
-                  >
-                    Log out
-                  </Link>
+            <AuthLink href="/signout" onClick={logout}>
+              Log out
+            </AuthLink>
           </>
         );
       } else {
         return (
-          <>
-                  <Link href="/signin">Log-in</Link>
-                  <Link href="/signup">Sign up</Link>
-          </>
+          <AuthLinksContainer>
+            <AuthLink href="/signin">Log-in</AuthLink>
+            <AuthLink href="/signup">Sign up</AuthLink>
+          </AuthLinksContainer>
         );
       }
     };

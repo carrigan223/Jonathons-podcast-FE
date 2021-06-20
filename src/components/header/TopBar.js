@@ -1,17 +1,13 @@
 import React from "react";
-import TopBarStylesContainer from "./TopBarStylesContainer";
+import { TopBarStylesContainer, TitleLink } from "./TopBarStylesContainer";
 import UserIcon from "./UserIcon";
 const TopBar = () => {
-
   return (
     <TopBarStylesContainer>
-       <header>
-        Top Bar
-      </header>
+      <TitleLink to="/">Top Bar</TitleLink>
       <UserIcon></UserIcon>
     </TopBarStylesContainer>
-  )
-
-}
+  );
+};
 
 export default TopBar;
