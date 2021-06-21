@@ -17,7 +17,7 @@ const TitleLink = styled(Link)`
   padding: 0 20px;
   text-transform: uppercase;
   text-decoration: none;
-  text-shadow: 2px 2px 20px white;
+  text-shadow: 2px 2px 20px cyan;
   font-family: "Poppins";
 `;
 

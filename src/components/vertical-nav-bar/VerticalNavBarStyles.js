@@ -12,7 +12,8 @@ const IconContainer = styled.div`
   display: flex;
   justify-content: center;
   margin: 20px 0;
-  color: white;
+  color: cyan;
+  text-shadow: 2px 2px 10px cyan;
 `;
 const LinkContainer = styled.div`
   margin: 20px;
@@ -37,7 +38,8 @@ const StyledLink = styled(Link)`
   padding: 10px;
   color: #b3b3b3;
   :hover {
-    color: white;
+    color: cyan;
+    text-shadow: 1px 1px 10px white;
   }
 `;
 

@@ -2,8 +2,9 @@ import "./App.css";
 import VerticalNavBar from "./components/vertical-nav-bar/VerticalNavBar";
 import styled from "styled-components";
 // eslint-disable-next-line no-unused-vars
-import ReactDOM from "react-dom";
 import Home from "./views/Home";
+import EpisodeList from "./views/ListEpisodes";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import TopBar from "./components/header/TopBar";

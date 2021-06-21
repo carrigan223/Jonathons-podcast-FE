@@ -13,14 +13,13 @@ const AuthLink = styled(Link)`
   font-size: 1.25rem;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid #404040;
-  padding: 7px;
+  border: 2px solid cyan;
+  padding: 7px 15px;
   border-radius: 33px;
-  background-color: #404040;
-
+  background-color: black;
 
   :hover {
-      box-shadow: 2px 2px 20px white;
+    box-shadow: 2px 2px 10px white;
   }
 `;
 
